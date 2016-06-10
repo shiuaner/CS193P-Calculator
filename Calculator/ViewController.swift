@@ -10,16 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+	var userIsTypingNow = false;
+	
+	@IBOutlet weak var displayCalculatorResult: UILabel!
+
+	@IBAction func performDigits(sender: UIButton) {
+		let digit = sender.currentTitle!
+		let displayText = displayCalculatorResult.text!
+		
+		if userIsTypingNow {
+			displayCalculatorResult.text = displayText + digit
+		} else {
+			displayCalculatorResult.text = digit
+		}
+		
+		userIsTypingNow = true
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	@IBAction func performOperation(sender: UIButton) {
+		
+		userIsTypingNow = false
+		
+		if let operation = sender.currentTitle {
+			if operation == "π" {
+				displayCalculatorResult.text = String(M_PI)
+			}
+		}
 	}
-
-
 }
 
