@@ -27,13 +27,25 @@ class ViewController: UIViewController {
 		userIsTypingNow = true
 	}
 
+	var displayValue : Double {
+		get {
+			return Double(displayCalculatorResult.text!)!
+		}
+		set {
+			displayCalculatorResult.text = String(newValue)
+		}
+	}
+	
 	@IBAction func performOperation(sender: UIButton) {
 		
 		userIsTypingNow = false
 		
 		if let operation = sender.currentTitle {
 			if operation == "π" {
-				displayCalculatorResult.text = String(M_PI)
+				displayValue = M_PI
+			}
+			else if operation == "√" {
+				displayValue = sqrt(displayValue)
 			}
 		}
 	}

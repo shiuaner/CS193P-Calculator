@@ -12,6 +12,7 @@
 		4B9640B81D09444C00D77589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9640B61D09444C00D77589 /* Main.storyboard */; };
 		4B9640BA1D09444C00D77589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9640B91D09444C00D77589 /* Assets.xcassets */; };
 		4B9640BD1D09444C00D77589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9640BB1D09444C00D77589 /* LaunchScreen.storyboard */; };
+		4B9640C61D0B8F2B00D77589 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9640C51D0B8F2B00D77589 /* CalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4B9640B91D09444C00D77589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B9640BC1D09444C00D77589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B9640BE1D09444C00D77589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9640C51D0B8F2B00D77589 /* CalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 		4B9640B11D09444C00D77589 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				4B9640C41D0944AF00D77589 /* Supported */,
+				4B9640C51D0B8F2B00D77589 /* CalculatorModel.swift */,
 				4B9640B41D09444C00D77589 /* ViewController.swift */,
 				4B9640B61D09444C00D77589 /* Main.storyboard */,
+				4B9640C41D0944AF00D77589 /* Supported */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9640C61D0B8F2B00D77589 /* CalculatorModel.swift in Sources */,
 				4B9640B51D09444C00D77589 /* ViewController.swift in Sources */,
 				4B9640B31D09444C00D77589 /* AppDelegate.swift in Sources */,
 			);
